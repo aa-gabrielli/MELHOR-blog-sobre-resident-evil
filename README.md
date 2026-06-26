@@ -1155,4 +1155,161 @@ main{
     padding-bottom:60px;
 
 }
+
+```javascript
+const musica = document.getElementById("musica");
+const audio = document.getElementById("bgm");
+
+let tocando = false;
+
+musica.addEventListener("click", () => {
+
+    if (!tocando) {
+
+        audio.play();
+        musica.innerHTML = "⏸ Pause Música";
+        tocando = true;
+
+    } else {
+
+        audio.pause();
+        musica.innerHTML = "▶ Play Música";
+        tocando = false;
+
+    }
+
+});
+
+/* ===========================
+   BOTÃO LIKE
+=========================== */
+
+let likes = 0;
+
+const like = document.getElementById("like");
+
+like.addEventListener("click", () => {
+
+    likes++;
+
+    like.innerHTML = `❤️ Like (${likes})`;
+
+});
+
+/* ===========================
+   BOTÃO DISLIKE
+=========================== */
+
+let dislikes = 0;
+
+const dislike = document.getElementById("deslike");
+
+dislike.addEventListener("click", () => {
+
+    dislikes++;
+
+    dislike.innerHTML = `🖤 Dislike (${dislikes})`;
+
+});
+
+/* ===========================
+   BOTÃO COMENTAR
+=========================== */
+
+const comentar = document.getElementById("comentar");
+
+comentar.addEventListener("click", () => {
+
+    const comentario = prompt("Escreva seu comentário:");
+
+    if (comentario && comentario.trim() !== "") {
+
+        alert("Obrigada pelo comentário!! 💖");
+
+    }
+
+});
+
+/* ===========================
+   CONTADOR FAKE
+=========================== */
+
+const contador = document.getElementById("contador");
+
+let visitas = 153724;
+
+setInterval(() => {
+
+    visitas += Math.floor(Math.random() * 3);
+
+    contador.innerHTML = visitas.toLocaleString("pt-BR");
+
+}, 3500);
+
+/* ===========================
+   BRILHO NOS BOTÕES
+=========================== */
+
+const botoes = document.querySelectorAll("button");
+
+botoes.forEach(botao => {
+
+    botao.addEventListener("mouseenter", () => {
+
+        botao.style.boxShadow = "0 0 20px crimson";
+
+    });
+
+    botao.addEventListener("mouseleave", () => {
+
+        botao.style.boxShadow = "none";
+
+    });
+
+});
+
+/* ===========================
+   TÍTULO PISCANDO
+=========================== */
+
+const titulo = document.querySelector(".tituloBlog");
+
+let alterna = true;
+
+setInterval(() => {
+
+    titulo.style.opacity = alterna ? "0.6" : "1";
+
+    alterna = !alterna;
+
+}, 900);
+
+/* ===========================
+   EFEITO DE ENTRADA
+=========================== */
+
+window.addEventListener("load", () => {
+
+    document.body.style.opacity = "0";
+
+    document.body.style.transition = "opacity 1.2s";
+
+    setTimeout(() => {
+
+        document.body.style.opacity = "1";
+
+    }, 100);
+
+});
+
+/* ===========================
+   MENSAGEM DE BOAS-VINDAS
+=========================== */
+
+setTimeout(() => {
+
+    alert("Bem-vinda ao MELHOR Blog sobre Resident Evil 4!!!! 💖");
+
+}, 700);
 ```
+
