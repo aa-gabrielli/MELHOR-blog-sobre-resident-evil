@@ -321,3 +321,838 @@ XOXO ( ˘ ³˘)♥︎
 
 </body>
 </html>
+
+```css
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#222;
+    font-family:"Press Start 2P",cursive;
+    line-height:2;
+    overflow-x:hidden;
+    cursor:url("cursor.cur"),auto;
+}
+
+/* =====================================================
+   SCROLLBAR
+===================================================== */
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#850000;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#c00000;
+}
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+.perfil{
+
+    width:90%;
+    max-width:1000px;
+
+    background:#FFCCDD;
+
+    border:3px solid #FFB6CF;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    box-shadow:0px 0px 20px rgba(255,182,207,.4);
+
+}
+
+.avatar{
+
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid white;
+
+    margin-right:25px;
+
+}
+
+.perfil h1{
+
+    font-size:14px;
+
+    color:#6d0037;
+
+    text-shadow:2px 2px white;
+
+}
+
+/* =====================================================
+   TÍTULO
+===================================================== */
+
+.tituloBlog{
+
+    text-align:center;
+
+    margin-top:35px;
+
+    margin-bottom:35px;
+
+    font-size:20px;
+
+    color:#ff78a7;
+
+    text-shadow:3px 3px white;
+
+}
+
+/* =====================================================
+   STATUS
+===================================================== */
+
+.status{
+
+    width:90%;
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    border:3px dashed #ffb6cf;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+}
+
+.status p{
+
+    margin-bottom:15px;
+
+    font-size:11px;
+
+}
+
+#musica{
+
+    margin-top:15px;
+
+    padding:12px 25px;
+
+    background:#111;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-family:inherit;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#musica:hover{
+
+    background:#900000;
+
+    transform:scale(1.05);
+
+}
+
+/* =====================================================
+   CONTADOR
+===================================================== */
+
+.contador{
+
+    width:300px;
+
+    margin:35px auto;
+
+    text-align:center;
+
+    background:#efefef;
+
+    border:2px solid #999;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:11px;
+
+    box-shadow:5px 5px #ddd;
+
+}
+
+#contador{
+
+    color:#9b0000;
+
+}
+
+/* =====================================================
+   INTRODUÇÃO
+===================================================== */
+
+.introducao{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:auto;
+
+    margin-bottom:80px;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    border:3px solid #ececec;
+
+}
+
+.introducao h3{
+
+    color:#ff79a8;
+
+    margin-bottom:30px;
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+.introducao p{
+
+    font-size:11px;
+
+    text-align:justify;
+
+}
+
+/* =====================================================
+   PARTE ESCURA
+===================================================== */
+
+.parteEscura{
+
+    background:#04050B;
+
+    color:white;
+
+    margin-top:80px;
+
+    padding-top:70px;
+
+    padding-bottom:100px;
+
+}
+
+.logo{
+
+    display:block;
+
+    margin:auto;
+
+    width:450px;
+
+    max-width:90%;
+
+    margin-bottom:80px;
+
+}
+=====================================================
+   PERSONAGENS
+===================================================== */
+
+.personagem{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:80px auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:50px;
+
+}
+
+.personagem img{
+
+    width:320px;
+
+    max-width:100%;
+
+    border:6px solid #8B0000;
+
+    border-radius:15px;
+
+    box-shadow:0 0 25px rgba(139,0,0,.8);
+
+    transition:.4s;
+
+}
+
+.personagem img:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 40px rgba(255,0,0,.9);
+
+}
+
+.personagem div{
+
+    flex:1;
+
+}
+
+.personagem h2{
+
+    color:#a30000;
+
+    margin-bottom:30px;
+
+    font-size:20px;
+
+    text-shadow:2px 2px black;
+
+}
+
+.personagem p{
+
+    font-size:11px;
+
+    text-align:justify;
+
+    line-height:2.2;
+
+}
+
+/* =====================================================
+   ALTERNÂNCIA DAS SEÇÕES
+===================================================== */
+
+.esquerda{
+
+    flex-direction:row;
+
+}
+
+.direita{
+
+    flex-direction:row-reverse;
+
+}
+
+/* =====================================================
+   OPINIÃO SOBRE A ASHLEY
+===================================================== */
+
+.opiniao{
+
+    width:90%;
+    max-width:1000px;
+
+    margin:100px auto;
+
+    background:#111;
+
+    border:4px solid #8B0000;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    box-shadow:0 0 30px rgba(139,0,0,.5);
+
+}
+
+.opiniao h2{
+
+    color:#b00000;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:20px;
+
+}
+
+.opiniao p{
+
+    font-size:11px;
+
+    line-height:2.2;
+
+    text-align:justify;
+
+}
+
+/* =====================================================
+   BOTÕES
+===================================================== */
+
+.interacoes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin-top:70px;
+
+    margin-bottom:70px;
+
+}
+
+.interacoes button{
+
+    font-family:inherit;
+
+    font-size:11px;
+
+    padding:15px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    color:white;
+
+}
+
+#like{
+
+    background:#8B0000;
+
+}
+
+#deslike{
+
+    background:#2c2c2c;
+
+}
+
+#comentar{
+
+    background:#5d5d5d;
+
+}
+
+#like:hover{
+
+    background:#c40000;
+
+    transform:translateY(-4px);
+
+}
+
+#deslike:hover{
+
+    background:#555;
+
+    transform:translateY(-4px);
+
+}
+
+#comentar:hover{
+
+    background:#7d7d7d;
+
+    transform:translateY(-4px);
+
+}
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    margin-top:100px;
+
+    text-align:center;
+
+    padding:60px;
+
+}
+
+footer h1{
+
+    color:white;
+
+    font-size:28px;
+
+    line-height:2;
+
+    text-shadow:
+
+    0 0 8px red,
+
+    0 0 18px crimson,
+
+    3px 3px black;
+
+}
+
+=====================================================
+   ANIMAÇÕES
+===================================================== */
+
+@keyframes piscar{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:.55;
+    }
+
+    100%{
+        opacity:1;
+    }
+
+}
+
+@keyframes flutuar{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-6px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes brilho{
+
+    0%{
+        box-shadow:0 0 10px rgba(255,0,0,.2);
+    }
+
+    50%{
+        box-shadow:0 0 30px rgba(255,0,0,.8);
+    }
+
+    100%{
+        box-shadow:0 0 10px rgba(255,0,0,.2);
+    }
+
+}
+
+.avatar{
+
+    animation:flutuar 3s ease-in-out infinite;
+
+}
+
+.logo{
+
+    animation:piscar 4s infinite;
+
+}
+
+.personagem img{
+
+    animation:brilho 2.5s infinite;
+
+}
+
+/* =====================================================
+   CURSOR PERSONALIZADO
+===================================================== */
+
+body{
+
+    cursor:url("cursor.cur"), auto;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+/* =====================================================
+   SELEÇÃO DE TEXTO
+===================================================== */
+
+::selection{
+
+    background:#8B0000;
+
+    color:white;
+
+}
+
+/* =====================================================
+   LINKS
+===================================================== */
+
+a{
+
+    color:#ff6f91;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#ffffff;
+
+    text-shadow:0 0 10px crimson;
+
+}
+
+/* =====================================================
+   DECORAÇÕES ESTILO TUMBLR/MSN
+===================================================== */
+
+.tituloBlog{
+
+    animation:piscar 3s infinite;
+
+}
+
+.status{
+
+    animation:flutuar 4s ease-in-out infinite;
+
+}
+
+.contador{
+
+    animation:flutuar 5s ease-in-out infinite;
+
+}
+
+/* =====================================================
+   RESPONSIVIDADE
+===================================================== */
+
+@media(max-width:900px){
+
+    .perfil{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .avatar{
+
+        margin-right:0;
+
+        margin-bottom:20px;
+
+    }
+
+    .personagem{
+
+        flex-direction:column !important;
+
+        text-align:center;
+
+    }
+
+    .personagem img{
+
+        width:260px;
+
+    }
+
+    .personagem h2{
+
+        margin-top:20px;
+
+    }
+
+    .logo{
+
+        width:320px;
+
+    }
+
+    footer h1{
+
+        font-size:18px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .tituloBlog{
+
+        font-size:15px;
+
+        line-height:1.8;
+
+    }
+
+    .perfil h1{
+
+        font-size:10px;
+
+    }
+
+    .status{
+
+        font-size:9px;
+
+    }
+
+    .contador{
+
+        width:90%;
+
+    }
+
+    .introducao,
+    .opiniao{
+
+        padding:20px;
+
+    }
+
+    .personagem h2{
+
+        font-size:15px;
+
+    }
+
+    .personagem p{
+
+        font-size:10px;
+
+    }
+
+    .interacoes{
+
+        gap:12px;
+
+    }
+
+    .interacoes button{
+
+        width:90%;
+
+    }
+
+}
+
+/* =====================================================
+   EFEITOS FINAIS
+===================================================== */
+
+body{
+
+    background-image:
+    radial-gradient(circle at top left, rgba(255,182,193,.12), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(255,0,0,.05), transparent 35%);
+
+}
+
+footer h1{
+
+    animation:piscar 2s infinite;
+
+}
+
+button:active{
+
+    transform:scale(.95);
+
+}
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+}
+
+main{
+
+    padding-bottom:60px;
+
+}
+```
